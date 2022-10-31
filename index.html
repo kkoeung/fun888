@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun888</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/10045.png">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flowbite -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="container bg-neutral-700">
+        <!-- header -->
+        <div class="head bg-gray-800 p-4">
+            <div class="head-content flex flex-row justify-between items-center">
+                <div class="head-item w-4/12">
+                    <i class="bi bi-facebook text-gray-50 text-lg p-2 hover:text-green-400"></i>
+                    <i class="bi bi-twitter text-gray-50 text-lg p-2 hover:text-green-400"></i>
+                    <i class="bi bi-youtube text-gray-50 text-lg p-2 hover:text-green-400"></i>
+                    <i class="bi bi-linkedin text-gray-50 text-lg p-2 hover:text-green-400"></i>
+                    <i class="bi bi-browser-chrome text-gray-50 text-lg p-2 hover:text-green-400"></i>
+                </div>
+                <div class="head-item2 flex justify-center w-4/12">
+                    <a href="#"><img src="./images/10045.png"></a>
+                </div>
+                <!-- close -->
+                <div class="close-button hidden">
+                    <div class="text-center">
+                        <button class="text-white" type="button" data-drawer-target="drawer-left-example"
+                            data-drawer-show="drawer-left-example" data-drawer-placement="left" aria-controls="drawer-left-example">
+                            <i class="bi bi-list text-3xl"></i>
+                        </button>
+                    </div>
+
+                    <!-- drawer component -->
+                    <div id="drawer-left-example" class="fixed z-50 h-screen p-4 overflow-y-auto bg-gray-800 w-80 dark:bg-gray-800 transition-transform left-0 top-0 -translate-x-full" tabindex="-1" aria-labelledby="drawer-left-label" aria-hidden="true">
+                        
+                        <button type="button" data-drawer-dismiss="drawer-left-example" aria-controls="drawer-left-example" class="text-gray-400 bg-transparent text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center">
+                            <i class="bi bi-x-lg text-2xl hover:text-red-600 text-blue-700 font-bold"></i>
+                        <span class="sr-only">Close menu</span>
+                        </button>
+
+                        <div class="search-box flex rounded-full bg-gray-100 mt-12">
+                            <input type="text" class="search-txt" name="" placeholder="Search...">
+                            <a href="#" class="search-btn hover:bg-blue-900">
+                            <i class="bi bi-search text-blue-700 text-md"></i>
+                            </a>
+                        </div>
+
+                        <ul class="flex flex-col flex-wrap justify-evenly mt-4">
+                            <li class=" menu text-sm text-gray-50 py-2 m-2 font-bold"><a href="index.html" class="head-text py-2 hover:text-green-400">Trò chơi</a></li>
+                            <li class=" menu text-sm text-gray-50 py-2 m-2 font-bold"><a href="agent.html" class="head-text py-2 hover:text-green-400">HD Nạp Rút</a></li>
+                            <li class=" menu text-sm text-gray-50 py-2 m-2 font-bold"><a href="index.html" class="head-text py-2 hover:text-green-400">Hướng Dẫn Chơi CFUN68</a></li>
+                            <li class=" menu text-sm text-gray-50 py-2 m-2 font-bold"><a href="blog.html" class="head-text py-2 hover:text-green-400">Tin Tức CFUN68</a></li>
+                            <li class=" menu text-sm text-gray-50 py-2 m-2 font-bold"><a href="contact.html" class="head-text py-2 hover:text-green-400">Hợp Tác Đại Lý</a></li>
+                            <li class=" menu text-sm text-gray-50 py-2 m-2 font-bold"><a href="contact.html" class="head-text py-2 hover:text-green-400">Khuyến mãi</a></li>
+                            <span class="py-2 m-2 text-xl text-gray-50 text-center"><i class="bi bi-reception-0"></i></i><i class="bi bi-reception-0"></i><i class="bi bi-reception-0"></i><i class="bi bi-reception-0"></i><i class="bi bi-reception-0"></i><i class="bi bi-reception-0"></i></span>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="head-item3 flex justify-end items-center w-4/12">
+                    <div class="search-box flex rounded-full bg-gray-50 ">
+                        <input type="text" class="search-txt" name="" placeholder="Search...">
+                        <a href="#" class="search-btn hover:bg-blue-700">
+                            <i class="bi bi-search text-blue-700 text-md hover:text-gray-50 p-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second-head -->
+        <div class="second-head sticky top-0 w-full z-50 flex justify-center items-center bg-gray-800 p-4 shadow">
+            <div class="second-head-content flex justify-between w-8/12">
+                <a href="#" class="text-sm p-2 text-gray-50 font-semibold duration-150 hover:text-green-400">Trò chơi</a>
+                <a href="#" class="text-sm p-2 text-gray-50 font-semibold duration-150 hover:text-green-400">HD Nạp Rút</a>
+                <a href="#" class="text-sm p-2 text-gray-50 font-semibold duration-150 hover:text-green-400">Hướng Dẫn Chơi CFUN68</a>
+                <a href="#" class="text-sm p-2 text-gray-50 font-semibold duration-150 hover:text-green-400">Tin Tức CFUN68</a>
+                <a href="#" class="text-sm p-2 text-gray-50 font-semibold duration-150 hover:text-green-400">Hợp Tác Đại Lý</a>
+                <a href="#" class="text-sm p-2 text-gray-50 font-semibold duration-150 hover:text-green-400">Khuyến mãi</a>
+            </div>
+        </div>
+        <!-- login -->
+        <div class="login-mid flex justify-center items-center bg-gray-800 p-2">
+            <div class="login-mid-content flex justify-center">
+                <a href="#" class="m-1 w-2/6"><img src="./images/10001.png"></a>
+                <a href="#" class="m-1 w-2/6"><img src="./images/10002.png"></a>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner flex justify-center items-center">
+            <div class="banner-item flex flex-col justify-center items-center">
+                <img src="./images/10004.jpg" class="banner-img">
+                <img src="./images/10003.png" class="banner-img3 hidden">
+                <a href="#" class="mt-4 flex justify-center"><img src="./images/10005.png" class="banner-img3 w-4/6"></a>
+            </div>
+        </div>
+        <!-- body -->
+        <div class="body flex justify-center items-center mt-8">
+            <div class="body-content w-10/12">
+                <!-- cover -->
+                <div class="body-item flex justify-center">
+                    <img src="./images/10059.jpg">
+                </div>
+                <!-- menu -->
+                <div class="body-item2 flex justify-center items-center mt-8">
+                    <div class="menu flex justify-between w-10/12">
+                        <a href="#" class="menu-text text-cyan-400 text-sm font-bold p-2 duration-300 hover:text-green-400">GAME HOT</a>
+                        <a href="#" class="menu-text text-cyan-400 text-sm font-bold p-2 duration-300 hover:text-green-400">TRÒ CHƠI ĐÁNH CÁ</a>
+                        <a href="#" class="menu-text text-cyan-400 text-sm font-bold p-2 duration-300 hover:text-green-400">SLOT</a>
+                        <a href="#" class="menu-text text-cyan-400 text-sm font-bold p-2 duration-300 hover:text-green-400">ĐỐI CHIẾN KỲ BÀI</a>
+                        <a href="#" class="menu-text text-cyan-400 text-sm font-bold p-2 duration-300 hover:text-green-400">LIVE CASINO</a>
+                        <a href="#" class="menu-text text-cyan-400 text-sm font-bold p-2 duration-300 hover:text-green-400">THỂ THAO</a>
+                        <a href="#" class="menu-text text-cyan-400 text-sm font-bold p-2 duration-300 hover:text-green-400">XỔ SỐ</a>
+                    </div>
+                </div>
+                <!-- gmaeicon -->
+                <div class="gameicon mt-8">
+                    <div class="gameicon-content">
+                        <div class="gameicon-item flex flex-row">
+                            <a href="#"> <img src="./images/10007.png" class="w-5/6"></a>
+                            <a href="#"> <img src="./images/10010.png" class="w-5/6"></a>
+                            <a href="#"> <img src="./images/10009.png" class="w-5/6"></a>
+                            <a href="#"> <img src="./images/10006.png" class="w-5/6"></a>
+                        </div>
+                        <div class="gameicon-item flex flex-row flex-wrap mt-8">
+                            <a href="#" class="m-2"> <img src="./images/10011.png" class=""></a>
+                            <a href="#" class="m-2"> <img src="./images/10008.png" class=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- play -->
+                <div class="play mt-12">
+                    <div class="play-content flex flex-row flex-wrap">
+                        <!-- 1 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10028.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">Ngọc Matcha tên thật là gì? 6 sự thật về Ngọc Matcha</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10029.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">Bạch thủ khung 3 ngày là gì? Cách nuôi lô đẹp nhất</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10030.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">
+                                    Iwin đổi thẻ: Khám phá cách nhận thưởng hấp dẫn cùng Cfun68</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10031.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">Nhập code tình kiếm 3d nhận ngay phần quà hấp dẫn</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10032.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">Code tân thủ iwin: Cập nhật code mới nhất 2022 cùng Cfun68</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10033.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">Tải iwin 2021 nhận quà khủng hấp dẫn ngay hôm nay</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10034.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">
+                                    Bạch thủ lô khung 3 ngày: Hướng dẫn cách nuôi hiệu quả nhất</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="play-item flex flex-row w-1/4">
+                            <img src="./images/10030.jpg" class="rounded-lg m-2">
+                            <div class="play-item-text flex flex-col m-2">
+                                <span class="text-gray-50 text-sm font-bold text-justify">
+                                    Tổng đài ví momo – Hướng dẫn liên hệ hotline cskh hỗ trợ 24/7</span>
+                                <span class="text-gray-50 text-xs mt-2 font-semibold"><i class="bi bi-clock m-1"></i> 31/10/2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tranggame -->
+                <div class="tranggame mt-20">
+                    <div class="tranggame-content">
+                        <div class="tranggame-item flex flex-col">
+                            <span class="tranggame-item-text text-center text-5xl text-gray-50 font-bold">Giới thiệu trang game CFUN68</span>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Thông tin về nhà cái CFUN68 chính thức trình làng thị trường Việt Nam đã tạo nên cơn sốt trong cộng đồng người chơi. Không chỉ bởi người chơi mong chờ vào một sân chơi công bằng, minh bạch, hơn hết là những trải nghiệm giải trí có 1-0-2 mà nhà cái hứa hẹn. Cho đến thời điểm hiện tại, nhà cái đã có một khoảng thời gian hoạt động tại nước ta, và gặt hái được vô số thành công ngoài mong đợi.</span>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4">Nếu bạn đang muốn tìm hiểu kỹ hơn về CFUN68, hãy đọc ngay nội dung được chia sẻ trong bài viết này nhé.</span>
+                            <!-- Hướng dẫn tải app -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Hướng dẫn tải app CFUN68 chi tiết</span>
+                            <!-- Bước 1 -->
+                            <span class="tranggame-item-text3 text-gray-50 mt-4"> <span class="font-bold">Bước 1:</span> Truy cập vào trang cfun68.club</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4"> <span class="font-bold">Bước 2:</span> Chọn tải app</span>
+                            <!-- img-1 -->
+                            <img src="./images/10035.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Hướng dẫn tải app CFUN68</span>
+
+                            <!-- Bước 3 -->
+                            <span class="tranggame-item-text3 text-gray-50 mt-4"> <span class="font-bold">Bước 3:</span> Ở màn hình kế tiếp, người chơi sẽ lựa chọn một trong 3 cách sau:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Tải Android app on Google Play</li>
+                                <li class="text-gray-50 m-2">Tải về cho iOS</li>
+                                <li class="text-gray-50 m-2">Tải file APK Android</li>
+                            </ul>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Tùy vào dòng máy bạn đang sử dụng mà lựa chọn file tải hợp lý. Sau đó, làm theo tiến trình cài đặt CFUN68 để ứng dụng có thể được cài đặt tự động. Thông thường, quá trình này diễn ra không quá 3 phút.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4"> <span class="font-bold">Bước 4:</span> Sau khi quá trình tải hoàn tất, anh em chọn đăng ký bằng facebook hoặc số điện thoại.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> <span class="font-bold">Bước 5:</span> Tiếp theo, anh em hãy liên kết tài khoản với ngân hàng mình đang dùng để có thể nạp cược cũng như nhận tiền thưởng khi thắng cược. Ngoài ra, anh em còn có thể nhận được khuyến mãi khi lần đầu nạp tiền chơi game.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Lưu ý: Để đảm bảo quá trình tải game được diễn ra suôn sẻ, hãy đảm bảo máy mình có đủ dung lượng bộ nhớ cần thiết nhé. Điều này cũng làm giảm tình trạng giật lag, cũng như bị out game bất ngờ do không đủ bộ nhớ khởi chạy.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Ngoài ra, bạn tuyệt đối không nên tải app từ các trang không chính thống. Bởi có nhiều đối tượng lợi dụng sự uy tín của CFUN68 để trục lợi cá nhân, lừa đảo lấy cắp thông tin khách hàng. Nguồn tải app uy tín hàng đầu hiện nay là cfun68.club.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Trong khi thực hiện nếu gặp bất kỳ sự cố nào, bạn có thể liên hệ với đội ngũ CSKH của cfun để được hỗ trợ kịp thời. Thời gian hỗ trợ 24/7, bất cứ khi nào bạn cần chúng tôi đều có mặt.</span>
+
+                            <!-- Nhà cái -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Nhà cái CFUN68 sở hữu kho game đa dạng</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Cốt lõi cho sự phát triển của bất kỳ nhà cái nào đến từ sản phẩm, dịch vụ mà họ cung cấp. Hiểu được điều này, nhà cái luôn chú trọng đầu tư, phát triển từ cái lõi, sau đó lan tỏa những thông điệp ý nghĩa khác tới cộng đồng người chơi Việt.</span>
+
+                            <!-- img-2 -->
+                            <img src="./images/10036.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Giao diện app cfun khá đẹp</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Bên cạnh loạt game truyền thống, thường có mặt tại các sòng bạc thì CFUN68 cũng đặc biệt quan tâm đến văn hóa Việt khi đưa vào nhiều trò chơi mang đậm chất dân gian, mang đậm bản sắc dân tộc. Bởi vậy, mỗi trò chơi được tung ra đều được người chơi hưởng ứng nhiệt tình, và có tính xu hướng cao.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4">Bạn có thể tham khảo một số dòng game nổi bật của nhà cái như:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Game bài hack não: Mậu Binh, Baccarat, Ba cào, Xì Dách, Poker, Rồng hổ,…</li>
+                                <li class="text-gray-50 m-2">Trò chơi slot với nhiều chủ đề đa dạng: Thần tài đến, Cửu Tuyến La Vương, Quay Thú, Xếp kẹo,…</li>
+                                <li class="text-gray-50 m-2">Mini game với lối chơi thú vị, đem lại những phút giây giải trí cực đã: Bắn cá đổi thưởng, Sicbo,…</li>
+                            </ul>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Bởi vậy, chắc chắn rằng, dù bạn đang muốn chơi thể loại nào, nhà cái cfun cũng “cân” hết được.</span>
+
+                            <!-- CFUN68 ứng dụng -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">CFUN68 ứng dụng live vào game casino</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Một trong những điểm tạo nên sự khác biệt của cổng game so với nền tảng giải trí chung trên thị trường hiện nay nằm ở yếu tố “live” trong casino.</span>
+
+                            <!-- img-2 -->
+                            <img src="./images/10038.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Live casino hấp dẫn</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Live được hiểu là gì? Đó là giao diện chơi thay thế dealer ảo, bằng dealer thật, tương tác trực tiếp với người chơi thông qua công nghệ trực tuyến. Mỗi một trò chơi diễn ra đều được quay gần như trùng thời gian với sòng bài Las Vegas thực. Chính vì thế, độ chân thực của kết quả ở mức cao nhất, đem lại lòng tin của người dùng với nhà cái hơn.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Thêm vào đó, công nghệ live còn tạo nên không gian chơi vừa thực vừa sinh động. Tạo cảm giác cho người chơi như đang được trải nghiệm tại chính casino ngoài thực vậy. Điều này sẽ gia tăng mức độ kích thích, giúp bạn có những màn chơi mãn nhãn, chạm đỉnh của sự sung sướng mỗi khi thắng cược.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Có thể thấy rằng, live casino hiện cũng được ứng dụng trên nhiều nhà cái khác nhau. Tuy nhiên, công nghệ live mà CFUN68 dùng được đánh giá cao, có độ sắc nét, chuẩn xác, hạn chế tối đa tình trạng giật lag do đường truyền,…</span>
+                            
+                            <!-- Các sảnh chơi -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Các sảnh chơi có tại CFUN68</span>
+                            
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Với tiêu chí hàng đầu đặt ra nhằm đảm bảo chất lượng dịch vụ của mỗi trò chơi trên hệ thống, cfun trực tiếp làm việc với các đơn vị cung cấp game hàng đầu thị trường hiện nay. Để làm được điều đó, chắc chắn nhà cái phải sở hữu một nền tảng tài chính cực khủng, vừa đảm bảo đầu tư sản phẩm chất lượng, vừa cam kết trả thưởng tới khách hàng.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Tham khảo các sảnh chơi có mặt tại nhà cái:</span>
+                            
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Game Slot liên kết với AE điện tử, PG điện tử, CQ9 điện tử, AG, JDB.</li>
+                                <li class="text-gray-50 m-2">Live Casino liên kết với WM, AG, OG, Sexy.</li>
+                                <li class="text-gray-50 m-2">Thể thao: UG.</li>
+                                <li class="text-gray-50 m-2">Xổ số: TCG Loto.</li>
+                            </ul>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Với sự đồng hành của những tên tuổi lão làng trên thị trường game này, chắc chắn CFUN68 sẽ còn tiếp tục tiến xa hơn nữa trên con đường chinh phục thị trường Việt đầy thách thức này.</span>
+
+                            <!-- Các câu hỏi -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Các câu hỏi thường gặp về CFUN68</span>
+
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Nguồn gốc CFUN có từ đâu?</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> <span class="font-bold">CFUN68</span> được biết tới đầu tiên tại Trung Quốc. Sau đó, thương hiệu này tiếp tục có được bước đà tiến sang thị trường các nước khác. Điển hình như chiếm lĩnh thị trường Đài Loan, và gần đây là Việt Nam.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4">Trong thời gian tới, cfun lên kế hoạch Marketing cho 4 thị trường trọng điểm, bao gồm Thái Lan, Ấn Độ, Indonesia, và không thể thiếu thị trường tiềm năng như Việt Nam.</span>
+
+                            <!-- CFUN có uy tín không? -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">CFUN có uy tín không?</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Phương thức thanh toán mà nhà cái đưa ra cũng tương đối đa dạng. Người chơi sẽ có nhiều cách để nạp tiền vào trò chơi yêu thích, cũng như rút thưởng về tài khoản ngân hàng một cách linh động.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4">Các hình thức nạp tiền chính tại cổng game:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Momopay</li>
+                                <li class="text-gray-50 m-2">Zalopay</li>
+                                <li class="text-gray-50 m-2">Viettel Pay</li>
+                                <li class="text-gray-50 m-2">Thẻ cào</li>
+                                <li class="text-gray-50 m-2">QR Banking</li>
+                                <li class="text-gray-50 m-2">I Banking</li>
+                            </ul>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Để nạp tiền vào ví, bạn chỉ cần nhấp chọn vào Nạp tiền ở góc dưới bên phải. Còn rút tiền mặt từ ví, chỉ cần nhấp vào mục Rút tiền mặt, và làm theo hướng dẫn của <span class="font-bold">CFUN68</span></span>
+
+                            <a href="#" class="text-center underline text-red-500">Xem thêm các hướng dẫn nạp rút</a>
+
+                            <!-- Cách thức rút -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Cách thức rút thưởng từ trò chơi như thế nào?</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Khi người chơi có được lượng tiền thưởng nhất định và muốn rút về, rất đơn giản, vào Rút tiền mặt.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Sau đó, ứng dụng hiển thị số tiền hiện tại bạn đang có. Bạn hiệu chỉnh số tiền muốn rút bằng cách nhập số vào ô trống, hoặc lựa chọn bằng cách kéo nút điều khiển bên dưới theo % số tiền hiện có.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Phần hiển thị thông tin tài khoản ngân hàng: Nếu chưa liên kết thì bạn sẽ tiến hành thêm thẻ trước. Còn nếu đã liên kết thì mục này hiển thị sẵn cho bạn.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Cuối cùng, làm lệnh kết toán và chờ nhà cái thực hiện giao dịch chuyển khoản cho bạn thôi.</span>
+                            
+                            <!-- Cách thức rút -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Hướng dẫn đăng ký tài khoản CFUN68</span>
+                            
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Để hòa mình vào không khí tươi vui của nhà cái cfun, bạn cần sở hữu một tài khoản chơi chính thức. Và cách thức đăng ký cfun tương đối đơn giản, không mất phí.</span>
+                            
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Bước 1: Tải game tại trang chủ cfun Việt Nam theo link cfun68.club</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Bước 2: Sau khi tải và cài đặt thành công, nhấn chọn vào Đăng ký ở màn hình giao diện đầu tiên.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Bước 3: Điền vào mẫu tạo tài khoản của nhà cái, gồm có các thông tin cần hoàn tất như:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">ID người giới thiệu nếu có.</li>
+                                <li class="text-gray-50 m-2">Tài khoản: Dạng chuỗi ký từ từ 4 đến 20 ký tự, bao gồm cả chữ và số.</li>
+                                <li class="text-gray-50 m-2">Tên trong game.</li>
+                                <li class="text-gray-50 m-2">Cài đặt mật khẩu: Từ 6 đến 20 ký tự, gồm cả chữ và số.</li>
+                                <li class="text-gray-50 m-2">Xác nhận mật khẩu.</li>
+                                <li class="text-gray-50 m-2">Mã OTP: Dạng 4 số.</li>
+                            </ul>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Và lựa chọn “Xác nhận” để gửi thông tin lên hệ thống.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Như vậy, chỉ mất chưa đầy 3 phút, bạn đã nhanh chóng tự tạo được tài khoản cfun rồi. Lúc này, đăng nhập, nạp tiền và trải nghiệm kho ứng dụng khổng lồ từ nhà cái thôi.</span>
+
+                            <!-- Khuyến mãi CFUN68 có gì hấp dẫn? -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Khuyến mãi CFUN68 có gì hấp dẫn?</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Mời bạn tham khảo loạt sự kiện siêu hấp dẫn đang diễn ra trên cổng game.</span>
+
+                            <!-- Điểm danh nhận thưởng -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Điểm danh nhận thưởng</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Bạn tiến hành truy cập vào ứng dụng game hàng ngày để nhận thưởng vàng nhé. Liên tiếp trong vòng 6 ngày sẽ nhận vàng x1, đến ngày thứ 7 nhận vàng x2.</span>
+
+                            <!-- img-3 -->
+                            <img src="./images/10039.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Chương trình điểm danh nhận vàng miễn phí</span>
+
+                            <!-- Thưởng liên kết -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Thưởng liên kết</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Sự kiện tặng tiền ràng buộc dành cho hội viên chính thức. Sau khi hoàn tất được liên kết số điện thoại, người chơi nhận ngay 10$ vào tài khoản.</span>
+
+                            <!-- Sự kiện cứu trợ chơi slot -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Sự kiện cứu trợ chơi slot</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Sự kiện CFUN68 được xây dựng dựa trên số tiền lỗ hàng ngày của người chơi slot. Cụ thể, khi đạt mức lỗ nhất định, người chơi sẽ được hỗ trợ một phần tiền. Thời gian hỗ trợ vào cung giờ 10h sáng hàng ngày. Cụ thể:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Từ 10000 - 19999, hỗ trợ 99</li>
+                                <li class="text-gray-50 m-2">Từ 20000 - 29999, hỗ trợ 199</li>
+                                <li class="text-gray-50 m-2">Từ 30000 - 39999, hỗ trợ 299</li>
+                                <li class="text-gray-50 m-2">Từ 40000 - 49999, hỗ trợ 399</li>
+                            </ul>
+
+                            <!-- Hỗ trợ bắn cá -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Hỗ trợ bắn cá</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Tương tự hoạt động slot game, anh em đam mê bắn cá cũng sẽ nhận được “phao cứu trợ” tương ứng. Cụ thể:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Từ 10000 - 19999, hỗ trợ 99</li>
+                                <li class="text-gray-50 m-2">Từ 20000 - 29999, hỗ trợ 199</li>
+                                <li class="text-gray-50 m-2">Từ 30000 - 39999, hỗ trợ 299</li>
+                                <li class="text-gray-50 m-2">Từ 40000 - 49999, hỗ trợ 399</li>
+                            </ul>
+
+                            <!-- Thưởng nạp lần đầu -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Thưởng nạp lần đầu</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Sự kiện nạp tiền đầu tay, nhận ngay khuyến mãi chi tiết như sau:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Nạp đầu 100, tặng ngay 30</li>
+                                <li class="text-gray-50 m-2">Nạp đầu 200, tặng ngay 55</li>
+                                <li class="text-gray-50 m-2">Nạp đầu 300, tặng ngay 80</li>
+                                <li class="text-gray-50 m-2">Nạp đầu 500, tặng ngay 125</li>
+                                <li class="text-gray-50 m-2">Nạp đầu 2000, tặng ngay 388</li>
+                            </ul>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Điều kiện nhận thưởng:</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Tiền khuyến mãi cần đạt tối thiểu 10 vòng cược mới có thể rút thưởng về được.</li>
+                                <li class="text-gray-50 m-2">Hoạt động chỉ được phép tham gia một lần duy nhất. Tiền thưởng nhận qua email.</li>
+                                <li class="text-gray-50 m-2">Phạm vi thưởng trong game slot và bắn cá.</li>
+                            </ul>
+
+                            <!-- Nhiệm vụ thành viên -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Nhiệm vụ thành viên</span>
+
+                            <ul class="list-disc p-6">
+                                <li class="text-gray-50 m-2">Nhiệm vụ điện tử: Đạt tổng cược 50000, nhận tiền vàng x188</li>
+                                <li class="text-gray-50 m-2">Nhiệm vụ điện tử 2: Đạt tổng cược 100000, nhận tiền vàng x388.</li>
+                            </ul>
+
+                            <!-- Ưu đãi VIP -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Ưu đãi VIP</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Vip <span class="font-bold">CFUN68</span> sẽ được hưởng nhiều quyền lợi đặc biệt được thiết kế riêng cho người chơi khi đạt đủ tổng tiền cược và tổng tiền nạp theo quy định. Cụ thể:</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Hoa hồng từ các game. Ví dụ, đạt VIP 1 nhận hoa hồng kì bài 0.52%, xổ số 0.21%, slot 0.35%, bắn cá 0.37%, live 0.21%, thể thao 0.21%, điện tử 0.21%.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Như vậy, bài viết đã giới thiệu tổng quan về nhà cái CFUN68. Hy vọng được đồng hành cùng bạn trên con đường phía trước. Với những cam kết đề ra, đảm bảo quyền lợi người chơi, chắc chắn bạn sẽ được hưởng lợi vượt trội hơn hẳn so với mặt bằng chung hiện nay.</span>
+
+                            <!-- Ưu đãi VIP -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Tìm hiểu kho game CFUN68</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Tuy là sản phẩm mới trên thị trường những CFUN68 đã nhận được sự yêu mến nhất định từ người chơi. Tất cả là nhờ kho game CFUN68 cực kỳ đa dạng, mới lạ. Bên cạnh đó, với lối chơi đơn giản, dù là lần đầu tham gia anh em cũng dễ dàng nhập cuộc.</span>
+
+                            <ul class="p-4">
+                                <li class="text-gray-50 m-2">- Hàng loạt game bài gây sốt: Xì dách, poker, 3 cào, rồng hổ, baccarat, mậu binh,…</li>
+                                <li class="text-gray-50 m-2">- Những sản phẩm game slot đầu tư về cả số lượng lẫn chất lượng: Xếp kẹo, cửu tuyến la vương, thần tài đến, quay thú,…</li>
+                                <li class="text-gray-50 m-2">- Live casino cực kỳ mới lạ.</li>
+                                <li class="text-gray-50 m-2">- Cá cược thể thao hấp dẫn.</li>
+                                <li class="text-gray-50 m-2">- Sản phẩm xổ số lô đề cũng được đầu tư kỹ lưỡng.</li>
+                                <li class="text-gray-50 m-2">- Mini game: sicbo, bắn cá,….</li>
+                            </ul>
+
+                            <!-- img-4 -->
+                            <img src="./images/10041.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Tìm hiểu kho game CFUN68</span>
+
+                            <!--Kho game CFUN68 -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Kho game CFUN68 mang đến những chương trình khuyến mãi gì?</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Với tiềm lực kinh tế mạng, cũng như sự tâm huyết dành cho lĩnh vực cá cược, kho game CFUN68 mang đến cho anh em những khuyến mãi sau:</span>
+
+                            <ul class="p-4">
+                                <li class="text-gray-50 m-2">- ặng 88K cho người chơi lần đầu tham gia có thể trải nghiệm.</li>
+                                <li class="text-gray-50 m-2">- Khuyến mãi hoàn tiền cược cho lần nạp đầu tên của anh em khi tham gia <span class="font-bold">CFUN68</span></li>
+                                <li class="text-gray-50 m-2">- Anh em đua top sự kiện có cơ hội nhận thưởng có giá trị hàng tỷ đồng,</li>
+                                <li class="text-gray-50 m-2">- Liên kết ngân hàng với tài khoản <span class="font-bold">CFUN68</span> để nhận ngay 10.000 tiền vàng.</li>
+                                <li class="text-gray-50 m-2">- Nhận tiền vàng miễn phí khi đăng nhập mỗi ngày</li>
+                            </ul>
+
+                            <!-- img-5 -->
+                            <img src="./images/10060.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Kho game CFUN68 mang đến những chương trình khuyến mãi gì?</span>
+                            <a href="#" class="text-center underline text-red-500">Xem thêm các hướng dẫn nạp rút</a>
+
+                            <!--Kho game CFUN68 -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Vì sao anh em nên lựa chọn giải trí tại CFUN68?</span>
+                            <!-- Cổng game CFUN68 -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Cổng game CFUN68 cực kỳ uy tín</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Cổng game CFUN68 được quản lý bởi nhà cái hàng đầu châu Á. Trước khi đến Việt Nam, nhà cái này đã chinh phục những thị trường khó tính nhất như: Đài Loan, Singapore, Trung Quốc,… Do đó, anh em sẽ được trải nghiệm những sản phẩm với độ chỉnh chu cao.</span>
+
+                            <!-- Giao dịch thanh toán nhanh chóng -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Giao dịch thanh toán nhanh chóng</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"><span class="font-bold">CFUN68</span> sẽ mang đến cho anh em đa dạng những hình thức rút tiền thưởng khác nhau: ví điện tử, hệ thống đại lý, rút trực tiếp tại ngân hàng,…</span>
+
+                            <!-- Chế độ bảo mật cổng game CFUN68 hiện đại -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Chế độ bảo mật cổng game CFUN68 hiện đại</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Hệ thống bảo mật <span class="font-bold">CFUN68</span> được các chuyên gia đánh giá cao. Với nhiều phương pháp, hệ thống bảo mật hiện đại được áp dụng. Bên cạnh đó, dữ liệu tại đây luôn được bảo mã an toàn tuyệt đối. Nếu những nhà cái khác khiến anh em lo lắng thông tin bị rò rỉ hoặc bị hack tài khoản. Thì khi tham gia tại <span class="font-bold">CFUN68</span>, anh em</span>
+
+                            <!-- img-5 -->
+                            <img src="./images/10042.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Kho game CFUN68 mang đến những chương trình khuyến mãi gì?</span>
+
+                            <!-- Tư vấn viên, nhân viên CSKH tận tâm -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Tư vấn viên, nhân viên CSKH tận tâm</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Đội ngũ nhân viên tại CFUN68 được trang bị nền tảng kiến thức tốt nhất. Luôn làm việc 24/7 để sẵn sàng giải đáp mọi thắc mắc, vấn đề của ngừi chơi. Anh em có thể liên hệ trực tiếp qua website, skype, zalo,… để được hỗ trợ kịp thời.</span>
+
+                            <!-- Đồ họa được đầu tư thiết kế -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Đồ họa được đầu tư thiết kế, hệ thống âm thanh sống động</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify">Cổng game <span class="font-bold">CFUN68</span> chăm chút, đầu tư từ những chi tiết đồ họa nhỏ nhất để mang đến cho anh em những trải nghiệm tốt nhất. Cùng với âm thanh sống động, khiến anh em như đang tham gia trực tiếp tại sòng casino đích thực.</span>
+
+                            <!-- Mọi trò chơi đều minh bạch, lập trình một cách khách quan -->
+                            <span class="tranggame-item-text2 text-3xl text-gray-50 font-bold mt-6">Mọi trò chơi đều minh bạch, lập trình một cách khách quan</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Quyền lợi của người chơi luôn được cổng game <span class="font-bold">CFUN68</span> đặt lên hàng đầu. Do đó, công bằng, minh bạch là những gì mà anh em có thể trải nghiệm khi tham gia giải trí tại đây. Với hệ thống công nghệ lập trình trò chơi tiên tiến, mọi hình thức gian lận, có sự can thiệp của bên thứ ba sẽ không bao giờ xảy ra tại <span class="font-bold">CFUN68</span>. Do đó, mọi anh em khi tham gia sẽ có tỷ lệ chiến thắng công bằng, ngang nhau, mọi kết quả đều đảm bảo sự ngẫu nhiên.</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Bên cạnh đó, tại kho game <span class="font-bold">CFUN68,</span> tỷ lệ trả thưởng cũng vô cùng cao. Giúp nâng cao cơ hội kiếm tiền cho anh em.</span>
+
+                            <!-- ĐẠI LÝ CFUN68 LÀM NHƯ NÀO? -->
+                            <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">ĐẠI LÝ CFUN68 LÀM NHƯ NÀO?</span>
+
+                            <!-- img-5 -->
+                            <img src="./images/10043.jpg" class="mt-12 m-auto">
+                            <span class="text-sm text-gray-400 italic text-center">Hợp tác Đại lý Cfun68</span>
+
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Đây là lời mời hợp tác chính thức từ cfun68</span>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Để hợp tác với cfun68 có 2 hình thức chính:</span>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> 1. Làm ref tại cfun68: nhận từ 0,35% đến 0,85% tổng cược</span>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> 2. Làm đại lý cfun68 chỉ được cấp dây đại lý tại cfun68.in</span>
+                            <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Mọi chi tiết hướng dẫn bạn có thể xem chi tiết <a href="#" class="text-red-500 underline">tại đây</a></span>
+
+                             <!-- Một vài trang có hình thức chơi game bài giống CFUN68 -->
+                             <span class="tranggame-item-text1 text-4xl text-gray-50 font-bold mt-6">Một vài trang có hình thức chơi game bài giống CFUN68</span>
+
+                             <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Bên cạnh nhà cái <span class="font-bold">CFUN68</span>, anh em cũng có thể tham gia tại những nhà cái sở hữu hình thức chơi game bài cực kỳ đa dạng, thú vị không thua kém <span class="font-bold">CFUN68</span> như: <span class="font-bold">CFUN68</span>, 868h, twin688, ku11bet, win365,… Với những game bài hiện đại, gây sốt trên thị trường cá cược hiện nay, chắc hẳn những nhà cái này không làm anh em thất vọng. Tuy nhiên, là một tân binh trong làng cá cược, chắc hẳn <span class="font-bold">CFUN68</span> sẽ hiểu được tâm lý cũng như nhu cầu của giới trẻ hiện nay hơn là những sản phẩm nhà cái đã được ra đời trước đó.</span>
+
+                             <span class="tranggame-item-text3 text-gray-50 mt-4 text-justify"> Trên đây là những thông tin tổng hợp xung quanh nhà cái <span class="font-bold">CFUN68</span>. Bên cạnh đó giới thiệu kho game <span class="font-bold">CFUN68</span> để anh em dễ dàng tham gia trải nghiệm. Hãy nhanh tay đăng ký ngay cho mình một tài khoản tại <span class="font-bold">CFUN68</span> ngay hôm nay để nhận được những phần thưởng cực khủng.</span>
+                            <!-- follow -->
+                             <div class="follow flex justify-end py-20">
+                                <div class="follow-content flex flex-row justify-between w-3/6">
+                                    <div class="follow-item">
+                                        <a href="#"><img src="./images/10044.png"></a>
+                                    </div>
+                                    <div class="follow-item">
+                                        <i class="bi bi-facebook text-gray-50 text-3xl p-2 hover:text-green-400"></i>
+                                        <i class="bi bi-twitter text-gray-50 text-3xl p-2 hover:text-green-400"></i>
+                                        <i class="bi bi-youtube text-gray-50 text-3xl p-2 hover:text-green-400"></i>
+                                        <i class="bi bi-linkedin text-gray-50 text-3xl p-2 hover:text-green-400"></i>
+                                        <i class="bi bi-browser-chrome text-gray-50 text-3xl p-2 hover:text-green-400"></i>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer bg-black p-6">
+            <div class="footer-item">
+                <span class="text-gray-600 text-sm">© Copyright 2021 CFUN68 | Tổng đại lý cấp 1 CFUN68 IN</span>
+            </div>
+        </div>
+
+        <div class="footer-menu bg-gray-800 fixed bottom-0 hidden">
+            <div class="footer-menu-item flex flex-row p-2">
+                <a href="#"><img src ="./images/10046.png"></a>
+                <a href="#"><img src ="./images/10047.png"></a>
+                <a href="#"><img src ="./images/10048.png"></a>
+                <a href="#"><img src ="./images/10049.png"></a>
+                <a href="#"><img src ="./images/10050.png"></a>
+            </div>
+        </div>
+    </section>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
